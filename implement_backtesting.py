@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 warnings.filterwarnings("ignore")
 
-df = pd.read_csv('minute_candle.xlsx - Sheet1.csv')
+df = pd.read_csv('data.csv')
 df.CreatedOn = pd.to_datetime(df.CreatedOn)
 
 df.dropna(axis=1 , inplace=True)
